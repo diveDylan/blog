@@ -1,9 +1,10 @@
 {
   "name": "dylan",
   "version": "0.1.0",
-  "homepage": "https://dylan921208.github.io",
+  "homepage": "https://dylan921208.github.io/blog",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8"
