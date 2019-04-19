@@ -1,33 +1,19 @@
-import { Layout, Menu, Breadcrumb } from 'antd';
-import React from 'react'
-const { Header, Content, Footer } = Layout;
+import { Layout, Breadcrumb } from 'antd'
+import React, { Component } from 'react'
+import BlogHeader from './Header'
+import menuList from '../../config/menuList'
+const { Content, Footer } = Layout;
 
-class AppContainer extends React.Component {
+class AppContainer extends Component {
   render() {
-    return ( <Layout className="layout">
-    <Header>
-      <div className="logo" />
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['2']}
-        style={{ lineHeight: '64px' }}
-      >
-        <Menu.Item key="1">nav 1</Menu.Item>
-        <Menu.Item key="2">nav 2</Menu.Item>
-        <Menu.Item key="3">nav 3</Menu.Item>
-      </Menu>
-    </Header>
+    return ( 
+    <Layout className="layout">
+    <BlogHeader menuList={menuList}/>
     <Content style={{ padding: '0 50px' }}>
-      <Breadcrumb style={{ margin: '16px 0' }}>
-        <Breadcrumb.Item>Home</Breadcrumb.Item>
-        <Breadcrumb.Item>List</Breadcrumb.Item>
-        <Breadcrumb.Item>App</Breadcrumb.Item>
-      </Breadcrumb>
       <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
     </Content>
     <Footer style={{ textAlign: 'center' }}>
-      Ant Design ©2018 Created by Ant UED
+     Blog @2019 Created by <a href="https://github.com/dylan921208">Dylan</a>
     </Footer>
   </Layout>)
   }
