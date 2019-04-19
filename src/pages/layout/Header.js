@@ -19,7 +19,7 @@ class BlogHeader extends Component {
           defaultSelectedKeys={['2']}
           style={{ lineHeight: '64px' }}
         >
-          {this.props.menuList.map(i => <Menu.Item key={i.url} onClick={this.menuChange}>{i.name}</Menu.Item>)}
+          {this.props.menuList.map(i => <Menu.Item key={i.url} style={{fontSize: '16px'}} onClick={this.menuChange}>{i.name}</Menu.Item>)}
         </Menu>
       </Header>
     )
