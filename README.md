@@ -1,6 +1,6 @@
 
 ## For github page
-[use react to build your websit https://***.github.io](https://blog.csdn.net/xieluoxixi/article/details/86495198)
+[use react to build your website https://***.github.io](https://blog.csdn.net/xieluoxixi/article/details/86495198)
 ## Available Scripts
 
 In the project directory, you can run:
