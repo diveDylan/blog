@@ -9,14 +9,14 @@ class BlogHeader extends Component {
   }
 
   render() {
-    console.log(this.props)
+    console.log(this.props, window.location)
     return (
       <Header style={{background: '#fff'}}>
         <div className="logo" />
         <Menu
           theme="light"
           mode="horizontal"
-          defaultSelectedKeys={['2']}
+          defaultSelectedKeys={['/web']}
           style={{ lineHeight: '64px' }}
         >
           {this.props.menuList.map(i => <Menu.Item key={i.url} style={{fontSize: '16px'}} onClick={this.menuChange}>{i.name}</Menu.Item>)}
