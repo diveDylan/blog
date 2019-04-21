@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { Menu, Layout } from 'antd'
+import { withRouter } from 'react-router-dom'
 const { Header } = Layout
 
 class BlogHeader extends Component {
+  constructor(props) {
+    super(props)
+  }
   // page change event
-  menuChange(e) {
-    console.log(e.target)
+  menuChange = (e) => {
+    this.props.history.push(e.key)
   }
 
   render() {
-    console.log(this.props, window.location)
     return (
       <Header style={{background: '#fff'}}>
         <div className="logo" />
@@ -26,4 +29,4 @@ class BlogHeader extends Component {
   }
 }
 
-export default BlogHeader
+export default withRouter(BlogHeader)
