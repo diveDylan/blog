@@ -1,0 +1,9 @@
+.logo {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/dylan.jpeg');
+  background-size: cover;
+}
